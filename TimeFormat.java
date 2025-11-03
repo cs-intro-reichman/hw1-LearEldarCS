@@ -27,10 +27,10 @@ public class TimeFormat {
 		} else if (hours == 12) {
 			System.out.print(hours + ":" + minuString + " PM");
 		} else {
-			System.out.println(hours + ":" + minuString + " AM" )
+			System.out.println(hours + ":" + minuString + " AM" );
 		}
 		
-	
+
 	
 	}
 }
