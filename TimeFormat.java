@@ -22,15 +22,16 @@ public class TimeFormat {
 			minuString = "" + minutes;
 		}
 
-		if (hours > 12) {
-			System.out.print(hours + ":" + minuString + " PM");
-		} else if (hours == 12) {
-			System.out.print(hours + ":" + minuString + " PM");
-		} else {
-			System.out.println(hours + ":" + minuString + " AM" );
-		}
 		
+		if (hours > 12) {
+		hours = hours - 12;
+		System.out.println(hours + ":" + minuString + " PM");
+			} else if (hours == 12) {
+			System.out.println(hours + ":" + minuString + " PM" );
+			} else {
+		System.out.println(hours + ":" + minuString + " AM" );
+			}
 
-	
+
 	}
 }
